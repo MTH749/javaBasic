@@ -13,7 +13,7 @@ public class ComparisonOperator {
 		 * -!= : 같지 않다
 		 */
 		
-		boolean b= 10 < 20; //비교연산자의 연산결과는 boolean 이다.
+		boolean b = 10 < 20; //비교연산자의 연산결과는 boolean 이다.
 		System.out.println(b);
 		b = 10 < 20 - 15; // 산술 연산 후 비교연산을 수행한다
 		System.out.println(b);
@@ -53,7 +53,33 @@ public class ComparisonOperator {
 		System.out.println(b);
 		b = !"abc".equals("ABC");
 		//같지 않다의 결과를 얻기 위해서는 !(NOT)을 앞에 붙여준다.
+
+
+		//다음의 문장들을 코드로 작성 후 연산결과를 출력해주세요.
+		//1보다 2가 큰가?
+		b = 1 < 2;
 		System.out.println(b);
-	}
+		//0은 100보다 작거나 같은가?
+		b= 0 <= 100;
+		System.out.println(b);
+	    
+		//3.14f 와 3.4는 다른가?
+		b = 3.14f != 3.14;
+		System.out.println(b);
+		
+		//"남자"와 "여자"는 다른가?
+		
+		b = !"남자".equals("여자");
+		System.out.println(b);
+		
+		b = !b;
+		System.out.println(b);
+		b = !(10 < 20);
+		System.out.println(b);
+		
+	   
+		
+		
+	} 
 
 }
