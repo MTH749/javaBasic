@@ -10,11 +10,11 @@ public class ddaa
 		int i;
 		int j;
 		int k;
-		int num = 10;
 		
-		for (i = 0; i < num; i++)
+		
+		for (i =0; i < 10; i++)
 		{
-			for (j = 1; j < num -i; j++)
+			for (j = 0; j < 10 -i; j++)
 			
 			{
 				System.out.print(" ");
