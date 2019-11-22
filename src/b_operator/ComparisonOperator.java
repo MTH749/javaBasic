@@ -1,5 +1,6 @@
 package b_operator;
 
+
 public class ComparisonOperator {
 
 	public static void main(String[] args) {
@@ -28,8 +29,8 @@ public class ComparisonOperator {
 		
 		b = 10.1f == 10.1;
 		System.out.println(b);
-		System.out.printf("%21.20f%n",10.1f); //f 는 포맷 
-		System.out.printf("%21.20f%n",10.1);
+		System.out.println (10.1f); //f 는 포맷 
+		System.out.println(10.1);
 		//float과 double은 정밀도가 달라 float 을 double로 현변환 하면 소수점을 정확하게 비교할 수 없다.
 		
 		b = 10.1f == (float)10.1;

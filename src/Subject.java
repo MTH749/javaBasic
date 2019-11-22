@@ -32,27 +32,22 @@ public class Subject {
 		String m = "당신의 유형은 D 입니다";
 		
 		
-		if (A1.equals ("yes")){
-			System.out.println("연예할떄 끌려다니는 타입이다");					
+		if (A1.equalsIgnoreCase ("yes")){
+			System.out.println("연애할때 끌려다니는 타입이다");
 			System.out.println("<yes or no>");
-			String yes1 = s.nextLine();
-			if (A1.equals ("yes"))
-				System.out.println(e + A1);					
-				System.out.println("<yes or no>");
-				if (A1.equals ("yes"))
-					System.out.println(h + A1);					
-					System.out.println("<yes or no>");
-					if (A1.equals ("yes"))
-						System.out.println(i + A1);					
-						System.out.println("<yes or no>");
-						if (A1.equals ("yes"))
-							System.out.println(f + A1);					
-							System.out.println("<yes or no>");
-			
+			String A2 = s.nextLine();
+		}else{
+			System.out.println("감정의 기복이 크지 않다");
+			System.out.println("<yes or no>");
+			String A2 = s.nextLine();
+		if	(A1.equalsIgnoreCase ("yes")){
+			System.out.println("연락이 없어도 믿고 기다리는 편이다");
+			System.out.println("<yes or no>");
+			String A3 = s.nextLine();
+		}	
 		
-		 }
-		
-		
+					}
+		 				
 	   }
 
 }
