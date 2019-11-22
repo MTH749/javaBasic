@@ -2,7 +2,9 @@
 public class Hello {
 
 	public static void main(String[] args) {
-		System.out.println("Hello, world!");
+		char ch = 'C';
+		System.out.println((char) (ch + 32));
+		
 	    
 
 	}
