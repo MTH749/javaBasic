@@ -6,8 +6,7 @@ public class Subject {
 
 		Scanner s = new Scanner(System.in);
 
-		System.out.println("<심리테스트 입니다.>");
-		
+		System.out.println("<심리테스트 입니다.>");		
 		System.out.println(" ");
 		System.out.println("나는 금사빠다   <금방 사랑에 빠진다  >");
 		System.out.println("<yes 나 no 로 대답해 주세요!>");
