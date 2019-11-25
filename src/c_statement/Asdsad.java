@@ -7,8 +7,9 @@ public class Asdsad {
 	public static void main(String[] args) {
 
 		
-		int value = (int)(Math.random() * 6) + 1;
-		System.out.println("value:"+value);
+		char b = '1';
+		
+		System.out.println((int)b);
 		}
 	
 	  
