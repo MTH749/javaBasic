@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Asdsad {
+public class Baseball {
 
 	public static void main(String[] args) {
 
@@ -13,6 +13,7 @@ public class Asdsad {
 
 		int st = 0;
 		int ball = 0;
+		int out = 0;
 		Scanner s = new Scanner(System.in);
 
 		do {
@@ -23,7 +24,6 @@ public class Asdsad {
 
 		} while (a == a1 || a1 == a2 || a2 == a);
 
-		System.out.println(a + "," + a1 + "," + a2);
 
 		System.out.println(" 숫자 3개를 입력해 주세요");
 		b = s.nextInt();
@@ -31,7 +31,6 @@ public class Asdsad {
 
 		if (a == b)
 		{
-
 			System.out.println(" 1구 ");
 			System.out.println(" s ");
 			
@@ -92,8 +91,8 @@ public class Asdsad {
 			}
 		else 
 		{
-				System.out.println("3구 \n O");
+				System.out.println("3구 \n O");			
 		}
-		System.out.print(" 정답  ");
+	
 	}
 }

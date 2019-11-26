@@ -115,8 +115,6 @@ System.out.println();
 
 			}
 
-		}
-	}
 
 
 
@@ -124,7 +122,7 @@ System.out.println();
 [4-7] Math.random()을 이용해서 1부터 6사이의 임의의 정수를 변수 value에 저장하는
 코드를 완성하라. (1)에 알맞은 코드를 넣으시오.
 
-
+	int value = (int)(Math.random() * 6) + 1
 
 
 [연습문제]/ch4/Exercise4_7.java
@@ -139,14 +137,7 @@ System.out.println("value:"+value);
 [4-8] 방정식 2x+4y=10의 모든 해를 구하시오. 단, x와 y는 정수이고 각각의 범위는
 0<=x<=10, 0<=y<=10 이다.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
- for(int x = 0; x <= 10; x++){
-			for (int y = 0; y <=10; y++){
-				if( x * 2 + y * 4 == 10){
-					System.out.println("x = " +  x  +  ","  + "y= " + y);
-=======
-=			for(int x = 0; x <= 10; x++){
+			for(int x = 0; x <= 10; x++){
 				for(int y = 0; y <= 10; y++){
 					if( 2 * x + 4 * y ==10 ){
 						System.out.println ( "x = " + x + "," + " y = " + y);
@@ -178,15 +169,10 @@ String str = "12345";
 int sum = 0;
 for(int i=0; i < str.length(); i++) {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-		sum += str.charAt(str) - '0';
-=======
-sum += str.charAt(i) - '0';
->>>>>>> master
-=======
+		sum += str.charAt(i) - '0';
+
 (1) 알맞은 코드를 넣어 완성하시오.
->>>>>>> parent of a4c1d03... "문자열 <-> 날짜변환 형변환(묵시적, 명시적) 실행계획
+
 
 }
 System.out.println("sum="+sum);
@@ -241,6 +227,12 @@ for (int i = 0 ; i < 8 ; i++ ) {
 1,1,2,3,5,8,13,21,34,55
 18 Java의 정석定石 3판 - 연습문제 풀이
 [4-12] 구구단의 일부분을 다음과 같이 출력하시오.
+
+= for(int i = 2; i <= 9; i++){
+			for(int j = 1; j <=3; j++){
+				
+				System.out.println( i +" * "+ j + " = " + i * j );
+
 [4-13] 다음은 주어진 문자열(value)이 숫자인지를 판별하는 프로그램이다. (1)에 알맞
 은 코드를 넣어서 프로그램을 완성하시오.
 [연습문제]/ch4/Exercise4_13.java
