@@ -10,6 +10,7 @@ public class Asdsad {
 				0<=x<=10, 0<=y<=10 이다.*/
 
 		
+<<<<<<< HEAD
 		for(int x = 0; x <= 10; x++){
 			for (int y = 0; y <=10; y++){
 				if( x * 2 + y * 4 == 10){
@@ -17,6 +18,11 @@ public class Asdsad {
 				}
 
 			}
+=======
+		char b = '1';
+		
+		System.out.println((int)b);
+>>>>>>> master
 		}
 		
 	}		

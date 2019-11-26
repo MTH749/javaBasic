@@ -139,10 +139,28 @@ System.out.println("value:"+value);
 [4-8] 방정식 2x+4y=10의 모든 해를 구하시오. 단, x와 y는 정수이고 각각의 범위는
 0<=x<=10, 0<=y<=10 이다.
 
+<<<<<<< HEAD
  for(int x = 0; x <= 10; x++){
 			for (int y = 0; y <=10; y++){
 				if( x * 2 + y * 4 == 10){
 					System.out.println("x = " +  x  +  ","  + "y= " + y);
+=======
+=			for(int x = 0; x <= 10; x++){
+				for(int y = 0; y <= 10; y++){
+					if( 2 * x + 4 * y ==10 ){
+						System.out.println ( "x = " + x + "," + " y = " + y);
+						
+					}
+				
+				}
+
+		}
+[실행결과]
+x=1, y=2
+x=3, y=1
+x=5, y=0
+
+>>>>>>> master
 
 [4-9] 숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코
 드를 완성하라. 만일 문자열이 "12345"라면, ‘1+2+3+4+5’의 결과인 15를 출력이 출력되
@@ -156,7 +174,11 @@ String str = "12345";
 int sum = 0;
 for(int i=0; i < str.length(); i++) {
 
+<<<<<<< HEAD
 		sum += str.charAt(str) - '0';
+=======
+sum += str.charAt(i) - '0';
+>>>>>>> master
 
 }
 System.out.println("sum="+sum);
@@ -164,24 +186,22 @@ System.out.println("sum="+sum);
 }
 [실행결과]
 15
-[실행결과]
-x=1, y=2
-x=3, y=1
-x=5, y=0
+
 Java의 정석定石 3판 - 연습문제 풀이 17
 [4-10] int타입의 변수 num 이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드를
 완성하라. 만일 변수 num의 값이 12345라면, ‘1+2+3+4+5’의 결과인 15를 출력하라. (1)
 에 알맞은 코드를 넣으시오.
 [주의] 문자열로 변환하지 말고 숫자로만 처리해야 한다.
+
 [연습문제]/ch4/Exercise4_10.java
 class Exercise4_10 {
 public static void main(String[] args) {
 int num = 12345;
 int sum = 0;
 
-(1) 알맞은 코드를 넣어 완성하시오.
-
 System.out.println("sum="+sum);
+
+
 }
 }
 [4-11] 피보나치(Fibonnaci) 수열(數列)은 앞을 두 수를 더해서 다음 수를 만들어 나가
