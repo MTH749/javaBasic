@@ -139,7 +139,10 @@ System.out.println("value:"+value);
 [4-8] 방정식 2x+4y=10의 모든 해를 구하시오. 단, x와 y는 정수이고 각각의 범위는
 0<=x<=10, 0<=y<=10 이다.
 
-
+ for(int x = 0; x <= 10; x++){
+			for (int y = 0; y <=10; y++){
+				if( x * 2 + y * 4 == 10){
+					System.out.println("x = " +  x  +  ","  + "y= " + y);
 
 [4-9] 숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코
 드를 완성하라. 만일 문자열이 "12345"라면, ‘1+2+3+4+5’의 결과인 15를 출력이 출력되
@@ -153,7 +156,7 @@ String str = "12345";
 int sum = 0;
 for(int i=0; i < str.length(); i++) {
 
-(1) 알맞은 코드를 넣어 완성하시오.
+		sum += str.charAt(str) - '0';
 
 }
 System.out.println("sum="+sum);
