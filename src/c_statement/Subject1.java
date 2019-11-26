@@ -140,6 +140,7 @@ System.out.println("value:"+value);
 0<=x<=10, 0<=y<=10 이다.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  for(int x = 0; x <= 10; x++){
 			for (int y = 0; y <=10; y++){
 				if( x * 2 + y * 4 == 10){
@@ -161,6 +162,9 @@ x=3, y=1
 x=5, y=0
 
 >>>>>>> master
+=======
+
+>>>>>>> parent of a4c1d03... "문자열 <-> 날짜변환 형변환(묵시적, 명시적) 실행계획
 
 [4-9] 숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코
 드를 완성하라. 만일 문자열이 "12345"라면, ‘1+2+3+4+5’의 결과인 15를 출력이 출력되
@@ -175,10 +179,14 @@ int sum = 0;
 for(int i=0; i < str.length(); i++) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		sum += str.charAt(str) - '0';
 =======
 sum += str.charAt(i) - '0';
 >>>>>>> master
+=======
+(1) 알맞은 코드를 넣어 완성하시오.
+>>>>>>> parent of a4c1d03... "문자열 <-> 날짜변환 형변환(묵시적, 명시적) 실행계획
 
 }
 System.out.println("sum="+sum);
@@ -198,6 +206,10 @@ class Exercise4_10 {
 public static void main(String[] args) {
 int num = 12345;
 int sum = 0;
+		while(num >0 ){
+				sum += num%10;
+				num /= 10;
+	
 
 System.out.println("sum="+sum);
 
