@@ -40,24 +40,22 @@ public class Sort {
 		int rank[] = new int[10];
 		for (int i = 0; i < numbers.length; i++) {
 			rank[i] = 1;
-		}	
-		
-			for (int i = 0; i < numbers.length; i++) {
-				for (int j = 0; j < numbers.length; j++) {
-
-					if (numbers[i] < numbers[j]) {
-
-						rank[i] += 1;
-
-					}
-
-				}
-				
-
-			}System.out.println(Arrays.toString(rank));
 		}
 
-	
+		for (int i = 0; i < numbers.length; i++) {
+			for (int j = 0; j < numbers.length; j++) {
+
+				if (numbers[i] < numbers[j]) {
+
+					rank[i] += 1;
+
+				}
+
+			}
+
+		}
+		System.out.println(Arrays.toString(rank));
+	}
 
 	private static void insertSort(int[] numbers) {
 
