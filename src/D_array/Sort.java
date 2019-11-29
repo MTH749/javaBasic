@@ -37,7 +37,7 @@ public class Sort {
 													// 필요(등수). 거기에 다 1을 저장해 놓고
 													// 비교시작
 		// 나보다 더 큰 점수를 만나면 등수를 1증가
-		int rank[] = new int[10];
+		int rank[] = new int[numbers.length];
 		for (int i = 0; i < numbers.length; i++) {
 			rank[i] = 1;
 		}
@@ -47,14 +47,16 @@ public class Sort {
 
 				if (numbers[i] < numbers[j]) {
 
-					rank[i] += 1;
+					rank[i]++;
 
 				}
 
 			}
 
 		}
-		System.out.println(Arrays.toString(rank));
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i] + " : " + rank[i] + " 등 ");
+		}
 	}
 
 	private static void insertSort(int[] numbers) {
@@ -80,8 +82,8 @@ public class Sort {
 
 		for (int i = 0; i < numbers.length - 1; i++) {
 			boolean changed = false;
-			for (int j = 0; j < numbers.length - 1 - i; j++) {// j의 반복문 다 처리후
-																// 바깥의 i로 이동
+			for (int j = 0; j < numbers.length - 1 - i; j++) {
+
 				if (numbers[j] > numbers[j + 1]) {
 
 					int temp = numbers[j];
@@ -99,8 +101,8 @@ public class Sort {
 
 	private static void selectSort(int[] numbers) {
 		for (int i = 0; i < numbers.length - 1; i++) {
-			for (int j = i + 1; j < numbers.length; j++) {// j의 반복문 다 처리후 바깥의 i로
-															// 이동
+			for (int j = i + 1; j < numbers.length; j++) {
+
 				if (numbers[i] > numbers[j]) {
 
 					int temp = numbers[i];

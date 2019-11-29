@@ -1,29 +1,22 @@
 package b_operator;
 
+import java.util.Scanner;
+
 public class ddaa
 {
 	
 	public static void main(String[] args)
 	{
 	
-		int i;
-		int j;
-		int k;
+		Scanner s1 = new Scanner(System.in);
+		System.out.println("숫자를 입력해 주세요");
+		int num = Integer.parseInt(s1.nextLine());		
+		String change = s1.nextLine();
 		
-		
-		for (i =0; i < 10; i++)
-		{
-			for (j = 0; j < 10 -i; j++)
-			
-			{
-				System.out.print(" ");
-			}	
-						 
-				for( k= 0; k <i * 2 + 1; k++)
-			{
-			System.out.print("*");	
-			}
-			System.out.println();
+		for(int i = 0; i < s1.nextLine().length(); i++){
+			int num1 = Integer.parseInt(s1.nextLine());
+			int num2 = change.indexOf(num);
+				num1 = num2;
 		}
 	}
 }
