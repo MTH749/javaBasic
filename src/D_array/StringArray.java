@@ -80,7 +80,7 @@ public class StringArray {
 		System.out.println(pn);
 	
 		
-
+		// 숫자를 입력 받을때 3자리 마다 ,를 찍어주세요
 		System.out.println("숫자를 입력해 주세요");
 		Scanner s1 = new Scanner(System.in);		
 		String change = s1.nextLine();	
