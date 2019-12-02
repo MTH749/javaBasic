@@ -93,5 +93,20 @@ public class StringArray {
 	}
 		System.out.println(change);
 		
-	}	
+		System.out.println ("숫자를 입력해 주세요");
+		String number =s1.nextLine();
+		String newNumber = "";
+		
+		int count = 0;
+		
+		for(int i = number.length() - 1; i >=0; i--){
+			newNumber = number.charAt(i) +newNumber;
+			count++;
+			if(count %3 == 0 && count != number.length()){
+					newNumber = "," + newNumber;		
+			} 	
+		}
+		System.out.println(newNumber);
+	}		
+	
 }
