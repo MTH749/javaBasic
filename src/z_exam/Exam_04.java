@@ -187,6 +187,8 @@ public class Exam_04 {
 				public static void main(String[] args) {
 				int[] answer = { 1,4,4,3,1,4,4,2,1,3,2 };
 				int[] counter = new int[4];
+						
+				
 				for(int i=0; i < answer.length;i++) {
 				 counter [answer[i]-1]++;
 				 
@@ -225,14 +227,13 @@ public class Exam_04 {
 				for(int i=0; i < star.length;i++) {
 				for(int j=0; j < star[i].length;j++) {
 				
-				(1) 알맞은 코드를 넣어 완성하시오.
+					result[j][star.length-i-1]=star[i][j];
 				 }
 				}
 				for(int i=0; i < result.length;i++) {
 				for(int j=0; j < result[i].length;j++) {
 				System.out.print(result[i][j]);
-				}S
-				ystem.out.println();
+				}System.out.println();
 				}
 				} // end of main
 				} // end of class
@@ -279,7 +280,8 @@ public class Exam_04 {
 				[실행결과]
 				src:abc123
 				result:`~!wer
-				30 Java의 정석定石 3판 - 연습문제 풀이
+				
+				
 				[5-11] 주어진 2차원 배열의 데이터보다 가로와 세로로 1이 더 큰 배열을 생성해서 배열
 				의 행과 열의 마지막 요소에 각 열과 행의 총합을 저장하고 출력하는 프로그램이다. (1)
 				에 알맞은 코드를 넣어서 완성하시오.
@@ -317,8 +319,7 @@ public class Exam_04 {
 				40 40 40 120
 				50 50 50 150
 				240 240 240 720
-				Java의 정석定石 3판 - 연습문제 풀이 31
-				[5-12] 예제5-23을 변경하여, 아래와 같은 결과가 나오도록 하시오.
+
 				[5-13] 단어의 글자위치를 섞어서 보여주고 원래의 단어를 맞추는 예제이다. 실행결과와
 				같이 동작하도록 예제의 빈 곳을 채우시오.
 				[실행결과]
