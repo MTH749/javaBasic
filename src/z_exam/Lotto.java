@@ -1,26 +1,44 @@
 package z_exam;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+
+import D_array.Array;
+
 public class Lotto {
 
 	public static void main(String[] args) {
-		int[] L = new int [45];
-		for(int i = 0 ; i < L.length; i ++){
-			L [i] = i +1;
-		}int temp = 0;
-		 int j =0;
-		for(int i = 0; i < 100; i++){
-			
-			j  = (int)(Math.random()*45);
-			temp = L[0];
-			L[0] = L[j];
-			L[j] = temp;
-		}
 		
-		for(int i = 0; i < 6; i++){
-			
-			System.out.print(L[i] + " ");
+		
+		int [] lo = new int [45];
+		
+		for(int i = 0; i <lo.length; i++) {
+			lo[i] = i + 1;
+	
 		}
+		int temp = 0;
+		int dice = 0;
+		
+		
+		for(int i = 0 ; i < 100; i++){
+
+			dice= (int)(Math.random()*45);  
+				
+				temp = lo[0];
+				lo[0] = lo[dice];
+			 	lo[dice] = temp;
+		}	 	
+		
+		for(int i =0; i < 6 ; i++){
+			
+		System.out.println("행운번호  "+ lo[i]);
+	 	
+		}	 	
 		
 	}
-	 
-}
+}					
+	
+
+

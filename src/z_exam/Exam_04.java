@@ -9,8 +9,8 @@ public class Exam_04 {
 				a. int[] arr[];
 				b. int[] arr = {1,2,3,};
 				c. int[] arr = new int[5];
-				d. int[] arr = new int[5]{1,2,3,4,5}; 배열 초기화시 대괄호에 값을 주면 안됨
-				e. int arr[5]; 선언시 크기를 주면 안됨
+				d. int[] arr = new int[5]{1,2,3,4,5}; 배열 초기화시 두번째 대괄호에 값을 주면 안됨
+				e. int arr[5]; 선언시 크기를 지정할 수 없음
 				f. int[] arr[] = new int[3][];
 				
 				[5-2] 다음과 같은 배열이 있을 때, arr[3].length의 값은 얼마인가?
@@ -90,7 +90,9 @@ public class Exam_04 {
 				ballArr[j] = tmp;
 				 }
 				// 배열 ballArr의 앞에서 3개의 수를 배열 ball3로 복사한다.				 *
-				
+				for(i =0; i < ball3.length; i++){
+					ball3[i] = ballArr[i];
+					}
 				System.arraycopy(ballArr,0,ball3,0,3);
 				for(int i=0;i<ball3.length;i++) {
 				System.out.print(ball3[i]);
@@ -264,8 +266,10 @@ public class Exam_04 {
 				// 문자열 src의 문자를 charAt()으로 하나씩 읽어서 변환 후 result에 저장
 				for(int i=0; i < src.length();i++) {
 				char ch = src.charAt(i);
-				
-				(1) 알맞은 코드를 넣어 완성하시오.
+					if( 'a' <= ch && ch <= 'z'){
+						result2 += abcCode[ch - 'a'];
+					}else{	
+						result2 += numCode[ch- '0'];
 				 }
 				System.out.println("src:"+src);
 				System.out.println("result:"+result);
@@ -339,7 +343,8 @@ public class Exam_04 {
 				for(int i=0;i<words.length;i++) {
 				char[] question = words[i].toCharArray(); // String을 char[]로 변환
 				
-				(1) 알맞은 코드를 넣어 완성하시오.
+				for(int i = 0; i <words.length; i++){
+					char[] question = words[i]/toCharArray();
 				char배열 question에 담긴 문자의 위치를 임의로 바꾼다.
 				
 				System.out.printf("Q%d. %s의 정답을 입력하세요.>",
