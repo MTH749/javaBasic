@@ -1,5 +1,7 @@
 package e_oop;
 
+import java.util.Scanner;
+
 public class OOP {
 
 	public static void main(String[] args) {
@@ -31,11 +33,51 @@ public class OOP {
 		//test1() 호출시 출력되는 문장에 번호를 붙여주세요.
 		sc.test1();
 		
-		Fun sc1 = new Fun();
+		//방금 만든 클래스의 객체를 생성하고 변수에 저장해 주세요.
 		
-		sc1.method(returnInt);
-		System.out.print(" ");
+		ClassMaker cm = new ClassMaker();
+		
+		//객체가 저장된 변수를 통해 메서드들을 호출해주세요.
+		//파라미터가 있는 메서드는 타입에 맞는 값을 넘겨주시고
+		//리턴타입이 있는 메서드는 리턴받은 값을 출력해주세요.
+		
+		cm.method1();
+		
+		
+		int method2 = cm.method2();
+		System.out.println(method2);
+		
+		cm.method3(10);
+		
+		int method4 = cm.method4(4, 2);
+		System.out.println(method4);
+		
+		cm.method5();
+		int ff = 1;
+		if(ff == 0){
+			
+			System.out.println();
+		}
+		//다음을 한줄씩  계산해서 최종 결과값을 출력해주세요.
+		//1. 123456 + 654321
+		//2. 1번결과값 * 123456
+		//3. 2번 결과값 / 123456
+		//4. 3번 결과값 - 654321
+		//5. 4번 결과값 % 123456
+		
+		Calculator cl = new Calculator();
+		
+		
+		double a = cl.plus(123456, 654321);
+		 	   a = cl.multiply (a, 123456);
+		 	   a = cl.division (a, 123456);
+		 	   a = cl.minus    (a, 654321);
+		 	   a = cl.remainder(a, 123456);
+		System.out.println(a);
+		
 		
 	}
-
+	
+	
+	
 }

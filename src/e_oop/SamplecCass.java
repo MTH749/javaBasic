@@ -50,7 +50,8 @@ public class SamplecCass {
 		test2();
 		System.out.println("test3 종료");//5
 	}
+
+
+	}
 	
 	
-	
-}
