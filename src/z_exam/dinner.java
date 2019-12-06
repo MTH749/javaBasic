@@ -14,6 +14,8 @@ ArrayList<String> dinner = new ArrayList<>();
 		dinner.add("바로그집");
 		dinner.add("부대찌개");
 		dinner.add("다수결");
+		dinner.add("국수");
+		
 		
 		Random random = new Random();
 	

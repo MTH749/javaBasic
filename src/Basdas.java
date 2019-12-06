@@ -1,25 +1,37 @@
 import java.util.Scanner;
 
+import e_oop.SimLiTest;
+
 
 public class Basdas {
 
 	public static void main(String[] args) {
-		
-		
-		// 숫자를 입력 받을때 3자리 마다 ,를 찍어주세요
-		Scanner s = new Scanner(System.in);
-		System.out.println(" 숫자를 입력해 주세요 ");
-		String dd = s.nextLine();
-		
-		for(int i = dd.length()-3; i > 0; i -= 3 ){
-			
-			char temp = dd. charAt (i);
-			char temp1 = dd.charAt(i);
-			
-			dd = temp + "," + temp1;
-			
-		}System.out.println(dd);		
-				
+		new Basdas().question();	
 	}
+		Scanner s = new Scanner(System.in);
+		
+		
+		String [] menu = new String [] {"김밥", "돈까스","라면","떡볶이","순대"};
+		String [] num = new String [] {"1번","2번","3번","4번","5번"};
+		String temp;
+		void question(){
+			System.out.println(" 메뉴를 입력해 주세요 ");
+			String answer = s.nextLine();
+			
+			for(int i = 0; i < num.length; i++){
 
+				for(int j = 0; j < num.length; j++){
+						
+					
+				if(answer.equals(menu[i])){					
+					temp = menu[j];
+					num[j] = temp;
+					
+				System.out.println("메뉴의 번호는" + num[j] );
+					answer = s.nextLine();
+			}
+			
+		}
+	  }
+	}
 }

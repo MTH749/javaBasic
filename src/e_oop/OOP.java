@@ -76,8 +76,7 @@ public class OOP {
 		System.out.println(a);
 		
 		
+		
 	}
-	
-	
-	
+
 }
