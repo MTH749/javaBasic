@@ -21,112 +21,117 @@ public class Fishing {
 		System.out.println("VVVVVVVVVVVVVVVVVV  VVVVVV");
 		System.out.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVV    VVVVVVVV");
 		
-		
-		for(int i = 0; i < 50; i++){
-			
-			a = (int)(Math.random()*15);		
-			
-			
+		for (int i = 0; i < 50; i++) {
+
+			a = (int) (Math.random() * 15);
+
 		}
 		b();
-	}	
-	 void b(){
-		 System.out.println("게임의 방법은 던지기를 입력하시면 됩니다");
-		 c();
-		 
-	 }
-	 
-	 
+	}
+
+	void b() {
+		System.out.println("게임의 방법은 던지기를 입력하시면 됩니다");
+		c();
+
+	}
+
 	void c() {
-				if (a == 0) {
-					b = fish[0];
-					d();
+		if (a == 0) {
+			b = fish[0];
+			d();
 
-				}
-				if (a == 1) {
-					b = fish[1];
-					d();
+		}
+		if (a == 1) {
+			b = fish[1];
+			d();
 
-				}if (a == 2) {
-					b = fish[2];
-					d();
+		}
+		if (a == 2) {
+			b = fish[2];
+			d();
 
-				}if (a == 3) {
-					b = fish[3];
-					d();
+		}
+		if (a == 3) {
+			b = fish[3];
+			d();
 
-				}if (a == 4) {
-					b = fish[4];
-					d();
+		}
+		if (a == 4) {
+			b = fish[4];
+			d();
 
-				}if (a == 5) {
-					b = fish[5];
-					d();
+		}
+		if (a == 5) {
+			b = fish[5];
+			d();
 
-				}if (a == 6) {
-					b = fish[6];
-					d();
+		}
+		if (a == 6) {
+			b = fish[6];
+			d();
 
-				}if (a == 7) {
-					b = fish[7];
-					d();
+		}
+		if (a == 7) {
+			b = fish[7];
+			d();
 
-				}if (a == 8) {
-					b = fish[8];
-					d();
+		}
+		if (a == 8) {
+			b = fish[8];
+			d();
 
-				}if (a == 9) {
-					b = fish[9];
-					d();
+		}
+		if (a == 9) {
+			b = fish[9];
+			d();
 
-				}if (a == 10) {
-					b = fish[10];
-					d();
+		}
+		if (a == 10) {
+			b = fish[10];
+			d();
 
-				}if (a == 11) {
-					b = fish[11];
-					d();
+		}
+		if (a == 11) {
+			b = fish[11];
+			d();
 
-				}if (a == 12) {
-					b = fish[12];
-					d();
+		}
+		if (a == 12) {
+			b = fish[12];
+			d();
 
-				}if (a == 13) {
-					b = fish[13];
-					d();
+		}
+		if (a == 13) {
+			b = fish[13];
+			d();
 
-				}if (a == 14) {
-					b = fish[14];
-					d();
+		}
+		if (a == 14) {
+			b = fish[14];
+			d();
 
-				}if (a == 15) {
-					b = fish[15];
-					d();
+		}
+		if (a == 15) {
+			b = fish[15];
+			d();
 
-				}
-			
-			}
-			
-						
+		}
+
+	}
 
 	void d() {
 		System.out.println(b);
 		String casting = s.nextLine();
 		a();
-		
+
 	}
-			 
-	
+
 	public static void main(String[] args) {
-		
-		
 		Fishing F = new Fishing();
-		
+
 		F.a();
 		F.b();
-		
-		
-	}
-	
-}
 
+	}
+
+}
