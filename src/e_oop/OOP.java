@@ -22,7 +22,7 @@ public class OOP {
 		
 		sc.method1();
 		
-		sc.method2(5);
+		sc.method2(3);
 		
 		String returnString = sc.method3();
 		System.out.println(returnString);
