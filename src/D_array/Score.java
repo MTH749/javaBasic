@@ -15,6 +15,10 @@ public class Score {
 		 * 400 70 2 홍길동 90 100 80 50 30 90 400 70 3 홍길동 90 100 80 50 30 90 400
 		 * 70 4 홍길동 90 100 80 50 30 90 400 70 5 홍길동 90 100 80 50 30 90 400 70
 		 */
+		
+		
+		
+		
 		int scores[][] = new int[21][6];
 		int[] sum = new int[scores.length];
 		double[] avg = new double[scores.length];
