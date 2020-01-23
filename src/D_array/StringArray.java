@@ -62,7 +62,7 @@ public class StringArray {
 
 			int price = Integer.parseInt(menu.substring(menu.indexOf(" ") + 1,
 					menu.indexOf("원")));
-			System.out.println(name + " = " + price);
+			System.out.println(name + " = " + price); 
 
 		}
 		

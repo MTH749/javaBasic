@@ -9,24 +9,19 @@ public class Subject {
 
 		char[] c = {'H','e','l','l','o'};
 
-		String s = new String(c);
+		s = new String(c);
 
 		
 
 		StringBuffer sb = new StringBuffer("Hello");
 
-		String s = new String(sb);
+		s = new String(sb);
 
 		
 
-		String s = "Hello";
+		s = "Hello";
 
 		String n = "0123456";	
-
-		char c = s.charAt(l);
-
-		char c2 = n.charAt(l);
-
 		
 
 		int i = "aaa".compareTo("aaa");
@@ -37,13 +32,13 @@ public class Subject {
 
 		
 
-		String s = "Hello";
+		 s = "Hello";
 
 		String s2 = s.concat("World");
 
 		
 
-		String s = "abcedfg";
+		s = "abcedfg";
 
 		boolean b = s.contains("bc");
 
@@ -51,27 +46,27 @@ public class Subject {
 
 		String file = "Hello.txt";
 
-		boolean b = file.endsWith("txt");
+		boolean b1 = file.endsWith("txt");
 
 		
 
-		String s = "Hello;"
+		s = "Hello";
 
-		boolean b = s.equals("Hello");
+		boolean b5 = s.equals("Hello");
 
 		boolean b2 = s.equals("hello");
 
 		
 
-		String s = "Hello";
+		s = "Hello";
 
-		boolean b = s.equalsIgnoreCase("HELLO");
+		boolean b4 = s.equalsIgnoreCase("HELLO");
 
-		boolean b2 = s.equalsIgnoreCase("heLLo");
+		boolean b3 = s.equalsIgnoreCase("heLLo");
 
 		
 
-		String s = "Hello";
+		s = "Hello";
 
 		int idx1 = s.indexOf('o');
 
@@ -79,63 +74,63 @@ public class Subject {
 
 		
 
-		String s = "Hello";
+		s = "Hello";
 
-		int idx1 = s.indexOf('e', 0);
+		int idx3 = s.indexOf('e', 0);
 
-		int idx2 = s.indexOf('e', 2);
+		int idx4 = s.indexOf('e', 2);
 
 		
 
-		String s = "ABCDEFG";
+		s = "ABCDEFG";
 
 		int idx = s.indexOf("CD");
 
 		
 
-		String s = new String("abc");
+		s = new String("abc");
 
-		String s2 = new String("abc");
+		s2 = new String("abc");
 
-		boolean b = (s==s2);
+		boolean b11 = (s==s2);
 
-		boolean b2 = s.equals(s2);
+		boolean b21 = s.equals(s2);
 
-		boolean b3 = (s.intern()==s2.intern());
-
-		
-
-		String s = "java.lang.Object";
-
-		int idx1 = s.lastIndexOf('.');
-
-		int idx2 = s.indexOf('.');
+		boolean b31 = (s.intern()==s2.intern());
 
 		
 
-		String s = "java.lang.java";
+		s = "java.lang.Object";
 
-		int idx1 = s.lastIndexOf("java");
+		int idx11 = s.lastIndexOf('.');
 
-		int idx2 = s.indexOf("java");
+		int idx21 = s.indexOf('.');
 
 		
 
-		String s = "Hello";
+		s = "java.lang.java";
+
+		int idx111 = s.lastIndexOf("java");
+
+		int idx211 = s.indexOf("java");
+
+		
+
+		 s = "Hello";
 
 		int length = s.length();
 
 		
 
-		String s = "Hello";
+		 s = "Hello";
 
 		String s1 = s.replace('H','C');
 
 		
 
-		String s = "Hellollo";
+		 s = "Hellollo";
 
-		String s1 = s.replace("ll","LL");
+		 s1 = s.replace("ll","LL");
 
 		
 
@@ -151,53 +146,53 @@ public class Subject {
 
 		
 
-		String s = "java.lang.Object";
+		s = "java.lang.Object";
 
-		boolean b = s.startsWith("java");
+		boolean b111 = s.startsWith("java");
 
-		boolean b2 = s.startsWith("lang");
+		boolean b211 = s.startsWith("lang");
 
 		
 
-		String s = "java.lang.Object";
+		s = "java.lang.Object";
 
-		String c = s.substring(10);
+		String c11 = s.substring(10);
 
 		String p = s.substring(5,9);
 
 		
 
-		String s = "Hello";
+		s = "Hello";
 
-		String s1 = s.toLowerCase();
-
-		
-
-		String s = "Hello";
-
-		String s1 = s.toString();
+		s = s.toLowerCase();
 
 		
 
-		String s = "Hello";
+		String s33 = "Hello";
 
-		String s1 = s.toUpperCase();
-
-		
-
-		String s = "	Hello World	";
-
-		String s1 = s.trim();
+		String s123 = s.toString();
 
 		
 
-		String b = String.valueOf(true);
+		String s45 = "Hello";
 
-		String c = String.valueOf('a');
+		String s18 = s.toUpperCase();
 
-		String i = String.valueOf(100);
+		
 
-		String l = String.valueOf(100L);
+		String s24 = "	Hello World	";
+
+		String s168 = s.trim();
+
+		
+
+		String b1111 = String.valueOf(true);
+
+		String c111 = String.valueOf('a');
+
+		String i33 = String.valueOf(100);
+
+		String l44 = String.valueOf(100L);
 
 		String f = String.valueOf(10f);
 

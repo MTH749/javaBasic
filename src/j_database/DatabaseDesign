@@ -36,3 +36,8 @@ String user_id;
 UserVo user = new UserVO();
 Store store = new StoreVO();
 store.setUser_id(user.getUser_id());
+
+
+조 소개 > 주제 소개 > 주제 선정 배경 > 프로그램 구조 > 시연
+발표 1명, ppt 및 시연 도우미 1명
+

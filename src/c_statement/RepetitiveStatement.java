@@ -11,7 +11,7 @@ public class RepetitiveStatement {
 		 * -for(int i = 1; i <=10; i++{}
 		 * -for(1부터 10까지 1씩 증가하면서 반복{}   
 		 */
-		
+	
 		for (int i = 1; i <= 10; i++){
 			//for(초기화)ㅣ 조건식; 증감식{}	
 			//초기화 : 조건식과 증감식에 사용할 변수 초기화
